@@ -1,0 +1,233 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(233, 204, 209)
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/* Header styles */
+header {
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header img {
+    height: 50px; /* Adjust height as needed */
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Home section styles */
+#home {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-color: rgb(233, 204, 209) /* Add background color #f4f4f4;*/
+    
+}
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 100px 20px; /* Increase padding for top and bottom */
+    
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Marquee text styles */
+marquee {
+    font-size: 1.2em;
+    color: #333; /* Text color */
+    
+    padding: 10px; /* Padding around the text */
+}
+
+marquee span {
+    margin-right: 20px; /* Spacing between individual lines of text */
+}
+
+
+/* About section styles */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Services section styles */
+#services {
+    padding: 50px 0;
+}
+
+#services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.service .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+}
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 0 15px; /* Adjust container padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header img {
+        height: 40px; /* Adjust header logo height for smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #home .container {
+        padding: 80px 20px; /* Adjust home section padding for smaller screens */
+    }
+
+    #home h1 {
+        font-size: 2em; /* Adjust home section h1 font size for smaller screens */
+    }
+
+    #home p {
+        font-size: 1em; /* Adjust home section paragraph font size for smaller screens */
+    }
+
+    .service {
+        width: 100%; /* Adjust service width for smaller screens */
+        margin: 20px 0; /* Adjust service margin for smaller screens */
+    }
+
+    .service img {
+        max-height: 150px; /* Adjust service image max height for smaller screens */
+    }
+
+    .service h3 {
+        font-size: 1.2em; /* Adjust service h3 font size for smaller screens */
+    }
+
+    .service p {
+        font-size: 0.9em; /* Adjust service paragraph font size for smaller screens */
+    }
+}
+
